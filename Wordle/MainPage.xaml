@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wordle.MainPage"
+             BackgroundColor="White"
+             Title="Wordle"
+             Shell.NavBarIsVisible="False">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+
+        <VerticalStackLayout Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <HorizontalStackLayout>
+                <Label Text="W" FontSize="50" FontAttributes="Bold" TextColor="Green" BackgroundColor="Orange"/>
+                <Label Text="O" FontSize="50" FontAttributes="Bold" TextColor="Orange" BackgroundColor="Red"/>
+                <Label Text="R" FontSize="50" FontAttributes="Bold" TextColor="Red" BackgroundColor="Green"/>
+                <Label Text="D" FontSize="50" FontAttributes="Bold" TextColor="Green" BackgroundColor="Orange"/>
+                <Label Text="L" FontSize="50" FontAttributes="Bold" TextColor="Orange" BackgroundColor="Red"/>
+                <Label Text="E" FontSize="50" FontAttributes="Bold" TextColor="Red" BackgroundColor="Green"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Entry x:Name="loginBox" BackgroundColor="LightGray" FontSize="16" MaxLength="14" Placeholder="Enter your name" TextColor="Black" TextChanged="LoginBox_TextChanged" />
+            <Button x:Name="LoginBtn" Padding="5" BackgroundColor="Gray" FontSize="16" Text="Login" WidthRequest="150" Clicked="LoginBtn_Clicked" IsEnabled="false" />
+        </VerticalStackLayout>
+        <VerticalStackLayout Grid.Row="2">
+            <Label x:Name="errorlbl" Text=" " FontSize="25" FontAttributes="Bold" TextColor="RED"  VerticalTextAlignment="Center" HorizontalTextAlignment="Center" IsEnabled="false" />
+            <!-- leave empty row 3 if there is no exception-->
+        </VerticalStackLayout>
+            
+    
+    </Grid>
+
+
+    
+</ContentPage>

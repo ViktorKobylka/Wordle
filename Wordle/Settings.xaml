@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wordle.Settings"
+             BackgroundColor="White"
+             Title="Settings"
+             Shell.NavBarIsVisible="False">
+    
+    <Grid x:Name="SettingsGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+
+        <VerticalStackLayout Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Label x:Name="Settingslbl" Text="Settings" FontSize="50" TextColor="Black"  BackgroundColor="White"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="1"  Padding="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Button x:Name="ThemeBtn" TextColor="Black" BackgroundColor="LightGray" FontSize="16" Text="Light theme" WidthRequest="150" Clicked="ThemeBtn_Clicked"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="2"  Padding="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Button x:Name="BackBtn" TextColor="Black" BackgroundColor="LightGray" FontSize="16" Text="Back to menu" WidthRequest="150" Clicked="BackBtn_Clicked"/>
+        </VerticalStackLayout>
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wordle.Menu"
+             BackgroundColor="White"
+             Title="Menu"
+             Shell.NavBarIsVisible="False">
+
+    <Grid x:Name="MenuGrid">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <VerticalStackLayout Grid.Row="0"  Padding="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Image x:Name="logoimg" Source="ryg.webp" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="300" HeightRequest="150"></Image>
+            <Label x:Name="userName" TextColor="Black"  BackgroundColor="White" Padding="5" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" Text="0" >
+            </Label>
+        </VerticalStackLayout>
+
+
+        <VerticalStackLayout Grid.Row="1"  Padding="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Button x:Name="PlayBtn" TextColor="Black" BackgroundColor="LightGray" FontSize="30" Text="Play" WidthRequest="150" Clicked="PlayBtn_Clicked"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="2"  Padding="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Button x:Name="SettingsBtn" TextColor="Black" BackgroundColor="LightGray" FontSize="30" Text="Settings" WidthRequest="150" Clicked="SettingsBtn_Clicked"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="3"  Padding="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Button x:Name="ExitBtn" TextColor="Black" BackgroundColor="LightGray" FontSize="30" Text="Exit" WidthRequest="150" Clicked="ExitBtn_Clicked"/>
+        </VerticalStackLayout>
+
+    </Grid>
+    
+</ContentPage>

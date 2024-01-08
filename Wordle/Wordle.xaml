@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wordle.Wordle"
+             Title="Wordle"
+             Shell.NavBarIsVisible="False">
+
+    <Grid x:Name="WordleGrid">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <VerticalStackLayout Grid.Row="0"  VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand">
+            <HorizontalStackLayout Spacing="5">
+                <Label x:Name="First1"   WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="Gray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Second1"  WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Third1"  WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray" FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Fourth1"  WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray" FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Fifth1"  WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray" FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="1" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand">
+            <HorizontalStackLayout  Spacing="5">
+                <Label x:Name="First2"  WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Second2"  WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Third2"  WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Fourth2"  WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Fifth2"  WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="2" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand">
+            <HorizontalStackLayout  Spacing="5">
+                <Label x:Name="First3"  WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Second3"  WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Third3"  WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Fourth3"  WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Fifth3"  WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="3" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand">
+            <HorizontalStackLayout Spacing="5">
+                <Label x:Name="First4"   WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Second4"   WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Third4"   WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Fourth4"   WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Fifth4"   WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="4" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand">
+            <HorizontalStackLayout Spacing="5">
+                <Label x:Name="First5"   WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Second5"   WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Third5"   WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Fourth5"   WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Fifth5"   WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="5" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand">
+            <HorizontalStackLayout Spacing="5">
+                <Label x:Name="First6"   WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Second6"   WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Third6"   WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Fourth6"   WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="Fifth6"   WidthRequest="50" HeightRequest="50" TextColor="Black"  BackgroundColor="LightGray"  FontSize="30" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="6" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand">
+            <HorizontalStackLayout  Spacing="3">
+                <Button x:Name="Q" TextColor="Black"  FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="q" WidthRequest="35" HeightRequest="40" Clicked="Q_Clicked" />
+                <Button x:Name ="W" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="w" WidthRequest="38" HeightRequest="40" Clicked="W_Clicked"/>
+                <Button x:Name="E" TextColor="Black"  FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="e" WidthRequest="35" HeightRequest="40"  Clicked="E_Clicked"/>
+                <Button x:Name="R" TextColor="Black"  FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="r" WidthRequest="35" HeightRequest="40"  Clicked="R_Clicked" />
+                <Button x:Name="T" TextColor="Black"  FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="t" WidthRequest="35" HeightRequest="40"  Clicked="T_Clicked"/>
+                <Button x:Name="Y" TextColor="Black"  FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="y" WidthRequest="35" HeightRequest="40"  Clicked="Y_Clicked"/>
+                <Button x:Name="U" TextColor="Black"  FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="u" WidthRequest="35" HeightRequest="40"  Clicked="U_Clicked"/>
+                <Button x:Name="I" TextColor="Black"  FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="i" WidthRequest="35" HeightRequest="40"  Clicked="I_Clicked"/>
+                <Button x:Name="O" TextColor="Black"  FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="o" WidthRequest="35" HeightRequest="40"  Clicked="O_Clicked"/>
+                <Button x:Name="P" TextColor="Black"  FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="p" WidthRequest="35" HeightRequest="40"  Clicked="P_Clicked"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="7" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand">
+            <HorizontalStackLayout  Spacing="3" Padding="2">
+                <Button x:Name="A" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="a" WidthRequest="35" HeightRequest="40" Clicked="A_Clicked" />
+                <Button x:Name="S" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="s" WidthRequest="35" HeightRequest="40" Clicked="S_Clicked"/>
+                <Button x:Name="D" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="d" WidthRequest="35" HeightRequest="40" Clicked="D_Clicked"/>
+                <Button x:Name="F" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="f" WidthRequest="35" HeightRequest="40" Clicked="F_Clicked"/>
+                <Button x:Name="G" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="g" WidthRequest="35" HeightRequest="40" Clicked="G_Clicked"/>
+                <Button x:Name="H" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="h" WidthRequest="35" HeightRequest="40"  Clicked="H_Clicked"/>
+                <Button x:Name="J" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="j" WidthRequest="35" HeightRequest="40"  Clicked="J_Clicked"/>
+                <Button x:Name="K" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="k" WidthRequest="35" HeightRequest="40" Clicked="K_Clicked"/>
+                <Button x:Name="L" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="l" WidthRequest="35" HeightRequest="40" Clicked="L_Clicked"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="8" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand">
+            <HorizontalStackLayout  Spacing="3" Padding="5">
+                <Button x:Name="Enter" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGray" FontSize="8" Text="Enter" WidthRequest="50" HeightRequest="40"  Clicked="Enter_Clicked"/>
+                <Button x:Name="Z" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="z" WidthRequest="35" HeightRequest="40"  Clicked="Z_Clicked"/>
+                <Button x:Name="X" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="x" WidthRequest="35" HeightRequest="40" Clicked="X_Clicked"/>
+                <Button x:Name="C" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="c" WidthRequest="35" HeightRequest="40"  Clicked="C_Clicked"/>
+                <Button x:Name="V" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="v" WidthRequest="35" HeightRequest="40"  Clicked="V_Clicked"/>
+                <Button x:Name="B" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="b" WidthRequest="35" HeightRequest="40" Clicked="B_Clicked"/>
+                <Button x:Name="N" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="n" WidthRequest="35" HeightRequest="40"  Clicked="N_Clicked"/>
+                <Button x:Name="M" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGray" FontSize="10" Text="m" WidthRequest="38" HeightRequest="40"  Clicked="M_Clicked"/>
+                <Button x:Name="Delete" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGray" FontSize="8" Text="Delete" WidthRequest="55" HeightRequest="40"  Clicked="Delete_Clicked"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout  Grid.Row="9" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand">
+            <Button x:Name="BackMenuBtn" BackgroundColor="LightGray" FontSize="15" Text="Back to menu" WidthRequest="150" Clicked="BackMenuBtn_Clicked"/>
+        </VerticalStackLayout>
+
+
+    </Grid>
+    
+    
+</ContentPage>
